@@ -6,7 +6,7 @@ const Home: NextPage = (props) => {
   return (
     <div>
       <Head>
-        <title>Burn Solana SPL & LP Tokens | SOLTOKENBURNER</title>
+        <title>Burn Solana SPL & LP Tokens | SOLANATOKENBURNER</title>
         <meta
           name="description"
           content="Burn Solana SPL and LP Tokens without any coding! Solana Token Burner!"

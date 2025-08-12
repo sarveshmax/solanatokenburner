@@ -320,7 +320,7 @@ export const BurnTokensAll: FC = () => {
             tokens[i].name = "USD Coin";
             tokens[i].symbol = "USDC";
             tokens[i].logo =
-              "https://cryptologos.cc/logos/usd-coin-usdc-logo.png";
+              "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png";
           }
 
           if (
@@ -329,7 +329,7 @@ export const BurnTokensAll: FC = () => {
             tokens[i].name = "TetherUSD";
             tokens[i].symbol = "USDT";
             tokens[i].logo =
-              "https://cryptologos.cc/logos/tether-usdt-logo.png";
+              "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png";
           }
         }
 

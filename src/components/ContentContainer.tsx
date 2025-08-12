@@ -74,7 +74,7 @@ export const ContentContainer: FC = (props) => {
           </li> */}
 
           <li>
-            <Link href="https://soltokenburner.com/">
+            <Link href="https://solanatokenburner.com/">
               <a onClick={closeDrawer}>🏠 - Home</a>
             </Link>
           </li>
