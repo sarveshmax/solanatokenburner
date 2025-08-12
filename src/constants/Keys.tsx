@@ -2,9 +2,6 @@ import { PublicKey } from "@solana/web3.js";
 
 //DO NOT RESUSE 122
 export const walletAddresses = {
-    151: "BUrN5gu2jEWjyjCKNSWxTNhuYRHjDf8GKBv9d69mANPX",
-    152: "BuRn7uejt8X31q2ohBFHyMKdwrvRo72jkJF7k1EbmjQV",
-    153: "BuRN81w3syr3xsgCKsS7chFGwWkT8vQSB3PcnpPPjmC1",
     154: "BurnbWHceHjveLrdoFrGLXkSz5JPaU8C6pyhF3dfjcQC",
     155: "BUrNcC8RDKaEJcFzFRFy5LYjawt5k2x6eAv6bN7FViaL",
     156: "BUrNDdh4ACWipuRYySZHmbsLjHrFN68WDy6dnHyiqHdD",
