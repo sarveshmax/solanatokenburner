@@ -1,0 +1,85 @@
+import { FC, useRef, useEffect } from "react";
+import Link from "next/link";
+
+export const ContentContainer: FC = (props) => {
+  const drawerRef = useRef<HTMLInputElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  // Function to close the drawer
+  const closeDrawer = () => {
+    if (drawerRef.current) {
+      drawerRef.current.checked = false;
+    }
+  };
+
+  return (
+    <div className="drawer h-52 flex-1">
+      <input
+        id="my-drawer"
+        type="checkbox"
+        className="drawer-toggle grow"
+        ref={drawerRef}
+      />
+      <div className="drawer-content items-center">{props.children}</div>
+
+      {/* SideBar / Drawer */}
+      <div className="drawer-side">
+        {/* Use an onClick event to close the drawer when a link is clicked */}
+        <label
+          htmlFor="my-drawer"
+          className="drawer-overlay"
+          onClick={closeDrawer}
+        ></label>
+        <ul className="menu w-80 overflow-y-auto bg-base-100 p-4">
+          <li>
+            <Link href="/">
+              <a onClick={closeDrawer}>🔥 - One-Click Burner</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/manual">
+              <a onClick={closeDrawer}>🔥 - Manual Burner</a>
+            </Link>
+          </li>
+          <br />
+
+          {/* <li>
+            <Link href="https://medium.com/@solanasolutions/how-to-burn-lp-on-solana-burn-liquidity-pool-spl-tokens-2024-guide-98cfa4c8a4b8">
+              <a
+                onClick={closeDrawer}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🖋️ - Article on How to Use
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://youtu.be/9GjXk6A9CeA">
+              <a
+                onClick={closeDrawer}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🖥️ - Video Tutorial
+              </a>
+            </Link>
+          </li> */}
+          <br />
+
+          {/* <li>
+            <Link href="https://solana.kgm.com/">
+              <a onClick={closeDrawer}>⚒️ -More Tools</a>
+            </Link>
+          </li> */}
+
+          <li>
+            <Link href="https://soltokenburner.com/">
+              <a onClick={closeDrawer}>🏠 - Home</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
