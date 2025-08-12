@@ -51,7 +51,7 @@ export const TokenBurnerAllView: FC = ({}) => {
           Solana Token Burner
         </h1> */}
 
-        {/* DOMAIN UPGRADED */}
+        {/* DOMAIN UPGRADED
         <div
           style={{
             ...informationBoxStyle,
@@ -74,7 +74,7 @@ export const TokenBurnerAllView: FC = ({}) => {
           >
             {`SOLTOKENBURNER is now upgraded to SOLANATOKENBURNER.COM`}
           </pre>
-        </div>
+        </div> */}
 
         {/* BURN SOLANA SPL OR LP TOKENS - SUBTITLE */}
         <h1 className="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#9945FF] to-[#14F195]">
