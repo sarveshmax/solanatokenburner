@@ -51,6 +51,31 @@ export const TokenBurnerAllView: FC = ({}) => {
           Solana Token Burner
         </h1> */}
 
+        {/* DOMAIN UPGRADED */}
+        <div
+          style={{
+            ...informationBoxStyle,
+            backgroundColor: "goldenrod", // Override grey background
+            color: "black",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            height: "100%", // Ensure the parent container's height is sufficient
+          }}
+        >
+          <pre
+            style={{
+              ...informationBoxPrestyle,
+              margin: "0", // Remove any default margin
+              color: "black", // Override text color
+              fontWeight: "bold", // Make text bold
+            }}
+          >
+            {`SOLTOKENBURNER is now upgraded to SOLANATOKENBURNER.COM`}
+          </pre>
+        </div>
+
         {/* BURN SOLANA SPL OR LP TOKENS - SUBTITLE */}
         <h1 className="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#9945FF] to-[#14F195]">
           Burn Solana SPL or LP Tokens

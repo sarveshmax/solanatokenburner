@@ -2,14 +2,14 @@ import { PublicKey } from "@solana/web3.js";
 
 //DO NOT RESUSE 122
 export const walletAddresses = {
-    154: "BurnbWHceHjveLrdoFrGLXkSz5JPaU8C6pyhF3dfjcQC",
-    155: "BUrNcC8RDKaEJcFzFRFy5LYjawt5k2x6eAv6bN7FViaL",
-    156: "BUrNDdh4ACWipuRYySZHmbsLjHrFN68WDy6dnHyiqHdD",
-    157: "BUrndHsThu221Yayssq5znwBFxxMgdiTudxPw6Ce97Qs",
-    158: "BUrNiecuUEmX9LqZYdM4jqdZkXC8eBoWHtnzH9t2cLin",
-    159: "BuRniRTcT6bDnenJvojutSTPuHTqbWQgUe7vF1cq21Ez",
-    160: "BuRnJKxCJtYDG5FATyFJKNEukyWMpCcCNSN7yuicf8SN",
-  }
+  154: "BurnbWHceHjveLrdoFrGLXkSz5JPaU8C6pyhF3dfjcQC",
+  155: "BUrNcC8RDKaEJcFzFRFy5LYjawt5k2x6eAv6bN7FViaL",
+  156: "BUrNDdh4ACWipuRYySZHmbsLjHrFN68WDy6dnHyiqHdD",
+  157: "BUrndHsThu221Yayssq5znwBFxxMgdiTudxPw6Ce97Qs",
+  158: "BUrNiecuUEmX9LqZYdM4jqdZkXC8eBoWHtnzH9t2cLin",
+  159: "BuRniRTcT6bDnenJvojutSTPuHTqbWQgUe7vF1cq21Ez",
+  160: "BuRnJKxCJtYDG5FATyFJKNEukyWMpCcCNSN7yuicf8SN",
+};
 
 // // ITERATION 120 - SAMPLE
 // export const secret120 = [

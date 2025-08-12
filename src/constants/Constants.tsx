@@ -13,8 +13,8 @@ export const theRpcURL =
   // "https://solana-mainnet.g.alchemy.com/v2/De7sup4b6lJNpG-27MZcDvoYGmS3Tbcg";
   // "https://mainnet.helius-rpc.com/?api-key=c4b39a0f-0237-4381-a8d1-5ebfac9d6818";
   "https://cool-green-pine.solana-mainnet.quiknode.pro/7dcb1ea72bac02eb82d4f51dff0ee614e47f5568"; //kgm at gmail - not paid 15req/sec
-  // "https://rpc.ankr.com/solana/955402944d335f886e9a1518ffd10608dcc14cac77de5870da2012b6f5168ff9"; //paid 20usd 1k req/sec but slow
-  // "https://go.getblock.io/d39dd752cb6e40f8a80170adac174880"; //paid 29 usd, getblock 1 month only from feb 19
+// "https://rpc.ankr.com/solana/955402944d335f886e9a1518ffd10608dcc14cac77de5870da2012b6f5168ff9"; //paid 20usd 1k req/sec but slow
+// "https://go.getblock.io/d39dd752cb6e40f8a80170adac174880"; //paid 29 usd, getblock 1 month only from feb 19
 
 //FEES
 export const addressToReceiveBurnFees = new PublicKey(
@@ -30,7 +30,7 @@ export const tokensToIgnore = [
   "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v", //circle
   "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB", //tether
   "FtUEW73K6vEYHfbkfpdBZfWpxgQar2HipGdbutEhpump", //LP151
-  'DP1q7SqYkUdco2MVKYEvwA5DbGEKN4PjoNcrHg4krDVL', //LP151
+  "DP1q7SqYkUdco2MVKYEvwA5DbGEKN4PjoNcrHg4krDVL", //LP151
   "9ZQunFJbBfJ6voEemUAAhYPft23N6PL9cQ72xeATPkCd", //LP151
   "83CHtp5zfe8yEtrCypLF88bkFY1huxzFyLDswcrCpump", //LP151
   "3vEnveXeLT5uqMoMjEJTcCiShgoYQdrp2q9oo35D6kYc", //LP151
