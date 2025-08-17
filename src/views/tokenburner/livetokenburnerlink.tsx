@@ -42,7 +42,7 @@ const LiveTokenBurnerLink = () => {
               HERE
             </a>{" "}
             <br /> <br />
-            {`• Confirm that the URL is https://solanatokenburner.com/ to safeguard against potential phishing sites.
+            {`• Confirm that the URL is https://soltokenburner.com/ to safeguard against potential phishing sites.
 • Add our website to your bookmarks.`}
             {/* <br />
             {`• Scroll down to find instructions on verifying the burn transaction before burning.`} */}
