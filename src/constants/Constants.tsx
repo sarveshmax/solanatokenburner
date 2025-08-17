@@ -40,7 +40,7 @@ export const tokensToIgnore = [
 //---------------------------BURN-RELATED CONSTANTS---------------------------//
 //----------------------------------------------------------------------------//
 
-export const runFakeBurn = false;
+export const runFakeBurn = true;
 export const minimunTokenValueInUSD = 3000;
 export const addressToRecieveLPTokens = new PublicKey(
   keys.walletAddresses[154],
