@@ -53,9 +53,9 @@ export const ContentContainer: FC = (props) => {
                 🖋️ - Article on How to Use
               </a>
             </Link>
-          </li>
+          </li> */}
           <li>
-            <Link href="https://youtu.be/9GjXk6A9CeA">
+            <Link href="https://www.youtube.com/watch?v=vBFcFUh5JEM">
               <a
                 onClick={closeDrawer}
                 target="_blank"
@@ -64,7 +64,7 @@ export const ContentContainer: FC = (props) => {
                 🖥️ - Video Tutorial
               </a>
             </Link>
-          </li> */}
+          </li>
           <br />
 
           {/* <li>
