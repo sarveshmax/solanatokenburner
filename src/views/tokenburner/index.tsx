@@ -50,14 +50,12 @@ export const TokenBurnerView: FC = ({}) => {
           Solana Token Burner
         </h1>
 
-        {/* SOLANA CONGESTION NOTE */}
-        {/* <div style={{ ...informationBoxStyle }}>
+                // {/* NOTICE */}
+        <div style={{ ...informationBoxStyle }}>
           <pre style={{ ...informationBoxPrestyle }}>
-            {`Solana is experiencing congestion. Most transactions are failing.
-Try again in a while if burning fails.
-Check lastest transactions (network status) on https://solscan.io/txs`}
+            {`When burning tokens worth more than $1, Phantom may display a warning. Choose "Proceed anyway" if you’re certain you’re burning the correct assets.`}
           </pre>
-        </div> */}
+        </div>
 
         {/* NOTE AND INSTRUCTIONS */}
         <div style={{ ...informationBoxStyle }}>
