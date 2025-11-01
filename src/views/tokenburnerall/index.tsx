@@ -127,14 +127,8 @@ Select one of the options:
             </pre>
           </div>
         )}
-{publicKey != null && (
-                // {/* NOTICE */}
-        <div style={{ ...informationBoxStyle }}>
-          <pre style={{ ...informationBoxPrestyle }}>
-            {`When burning tokens worth more than $1, Phantom may display a warning. Choose "Proceed anyway" if you’re certain you’re burning the correct assets.`}
-          </pre>
-        </div>
-)}
+        
+
 
         {/* VIEW LIVE BURNS */}
         {/* <LiveTokenBurnerLink /> */}
