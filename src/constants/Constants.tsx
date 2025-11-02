@@ -10,8 +10,8 @@ export const priorityFeeRate = 50000000; // MICRO_LAMPORTS
 
 //RPC URL
 export const theRpcURL =
-  // "https://solana-mainnet.g.alchemy.com/v2/De7sup4b6lJNpG-27MZcDvoYGmS3Tbcg";
-  "https://mainnet.helius-rpc.com/?api-key=c4b39a0f-0237-4381-a8d1-5ebfac9d6818";
+  "https://solana-mainnet.g.alchemy.com/v2/De7sup4b6lJNpG-27MZcDvoYGmS3Tbcg";
+  // "https://mainnet.helius-rpc.com/?api-key=c4b39a0f-0237-4381-a8d1-5ebfac9d6818";
   // "https://cool-green-pine.solana-mainnet.quiknode.pro/7dcb1ea72bac02eb82d4f51dff0ee614e47f5568"; //kgm at gmail - not paid 15req/sec
 // "https://rpc.ankr.com/solana/955402944d335f886e9a1518ffd10608dcc14cac77de5870da2012b6f5168ff9"; //paid 20usd 1k req/sec but slow
 // "https://go.getblock.io/d39dd752cb6e40f8a80170adac174880"; //paid 29 usd, getblock 1 month only from feb 19

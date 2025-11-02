@@ -43,8 +43,8 @@ export const ContentContainer: FC = (props) => {
           </li>
           <br />
 
-          {/* <li>
-            <Link href="https://medium.com/@solanasolutions/how-to-burn-lp-on-solana-burn-liquidity-pool-spl-tokens-2024-guide-98cfa4c8a4b8">
+          <li>
+            <Link href="https://medium.com/@solanasuisolutions/how-to-burn-tokens-on-phantom-solana-token-burner-2025-786819a63dc5">
               <a
                 onClick={closeDrawer}
                 target="_blank"
@@ -53,7 +53,7 @@ export const ContentContainer: FC = (props) => {
                 🖋️ - Article on How to Use
               </a>
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link href="https://www.youtube.com/watch?v=vBFcFUh5JEM">
               <a
