@@ -13,6 +13,7 @@ export default function DeadWalletBurnGuide() {
           name="description"
           content="Solana does not use dead wallet addresses like Ethereum. Learn how burning really works on Solana and follow a step-by-step guide to burn SPL & LP tokens correctly using SolTokenBurner."
         />
+        <link rel="canonical" href="https://www.soltokenburner.com/blog/dead-wallet-address-solana" />
       </Head>
 
       <h1 className="text-3xl font-bold mb-6">
@@ -155,7 +156,7 @@ export default function DeadWalletBurnGuide() {
       {/* ------------------------------------- */}
       <h2 className="text-2xl font-semibold mt-10 mb-4">✅ Conclusion</h2>
 
-      <p className="mb-20">
+      <p className="mb-5">
         Burning tokens on Solana is simpler than it seems — you just need to
         follow the correct method. Since Solana does not use dead wallet
         addresses, using a real burn instruction through a trusted dApp such as
@@ -167,6 +168,22 @@ export default function DeadWalletBurnGuide() {
         supply, this method ensures the burn is clean, transparent, and visible
         on Solscan.
       </p>
+            <p className="text-gray-400 mb-10 text-sm">
+  Updated: November 2025
+</p>
+
+        <p className="mt-5 mb-10">
+            🔗 Related Guides: <br />
+                <a href="/blog/burn-solana-spl-lp-tokens" className="text-blue-400 underline">
+                How to Burn SPL & LP Tokens on Solana
+            </a> <br />
+                <a href="/blog/burn-lp-tokens-solana" className="text-blue-400 underline">
+                How to Burn Liquidity Pool Tokens on Solana - LP Burn
+            </a> <br />
+                <a href="/blog/sol-incinerator-alternative" className="text-blue-400 underline">
+                Why SolTokenBurner is the Only & Best Solana Token Burner
+            </a> <br />
+        </p>
 
       <Footer />
     </div>

@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import Head from "next/head";
 
 export default function SolIncineratorAlternative() {
@@ -9,6 +10,7 @@ export default function SolIncineratorAlternative() {
           name="description"
           content="A detailed comparison between SolTokenBurner and Sol Incinerator. Learn the safest and most flexible way to burn SPL and LP tokens on Solana in 2025."
         />
+        <link rel="canonical" href="https://www.soltokenburner.com/blog/sol-incinerator-alternative" />
       </Head>
 
       <h1 className="text-3xl font-bold mb-6">
@@ -114,12 +116,31 @@ export default function SolIncineratorAlternative() {
         📌 Final Word
       </h2>
 
-      <p className="mb-20">
+      <p className="mb-5">
         Sol Incinerator remains a simple tool for basic full-balance burns with questionable legitimacy, but most users
         today require finer control — especially developers, LP managers, and community
         leaders performing public proof-of-burn transactions. SolTokenBurner provides that
         flexibility while maintaining complete on-chain transparency and wallet-level safety.
       </p>
+
+      <p className="text-gray-400 mb-10 text-sm">
+  Updated: November 2025
+</p>
+
+        <p className="mt-5 mb-10">
+            🔗 Related Guides: <br />
+                <a href="/blog/burn-solana-spl-lp-tokens" className="text-blue-400 underline">
+                How to Burn SPL & LP Tokens on Solana
+            </a> <br />
+                <a href="/blog/burn-lp-tokens-solana" className="text-blue-400 underline">
+                How to Burn Liquidity Pool Tokens on Solana - LP Burn
+            </a> <br />
+            <a href="/blog/dead-wallet-address-solana" className="text-blue-400 underline">
+                Dead Wallet Address on Solana (Explained)
+            </a> <br />
+        </p>
+
+      <Footer />
     </div>
   );
 }

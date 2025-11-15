@@ -15,6 +15,7 @@ const TokenBurner: NextPage = (props) => {
           name="keywords"
           content="burn solana tokens, burn lp, solana token burner, burn spl tokens"
         />
+        <link rel="canonical" href="https://www.soltokenburner.com/manual" />
       </Head>
       <TokenBurnerView />
     </div>

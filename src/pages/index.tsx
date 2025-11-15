@@ -15,6 +15,7 @@ const Home: NextPage = (props) => {
     name="keywords"
     content="burn solana tokens, burn lp, solana token burner, burn spl tokens, burn tokens solana"
   />
+  <link rel="canonical" href="https://www.soltokenburner.com" />
 
   {/* FAQ Structured Data */}
   <script

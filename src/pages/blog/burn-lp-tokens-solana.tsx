@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import Head from "next/head";
 
 export default function BurnLPTokensGuide() {
@@ -9,6 +10,7 @@ export default function BurnLPTokensGuide() {
           name="description"
           content="A detailed guide explaining how to burn LP tokens on Solana using Phantom and SolTokenBurner. Works for Raydium, Orca, Meteora, and all SPL LP tokens."
         />
+        <link rel="canonical" href="https://www.soltokenburner.com/blog/burn-lp-tokens-solana" />
       </Head>
 
       <h1 className="text-3xl font-bold mb-6">
@@ -72,10 +74,29 @@ export default function BurnLPTokensGuide() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">📌 Final Word</h2>
 
-      <p className="mb-20">
+      <p className="mb-5">
         Burning LP tokens is one of the strongest trust signals for communities. SolTokenBurner
         gives you full control, lets you burn any amount, and works for all Solana LP tokens.
       </p>
+
+            <p className="text-gray-400 mb-10 text-sm">
+  Updated: November 2025
+</p>
+
+        <p className="mt-5 mb-10">
+            🔗 Related Guides: <br />
+                <a href="/blog/burn-solana-spl-lp-tokens" className="text-blue-400 underline">
+                How to Burn SPL & LP Tokens on Solana
+            </a> <br />
+            <a href="/blog/dead-wallet-address-solana" className="text-blue-400 underline">
+                Dead Wallet Address on Solana (Explained)
+            </a> <br />
+                <a href="/blog/sol-incinerator-alternative" className="text-blue-400 underline">
+                Why SolTokenBurner is the Only & Best Solana Token Burner
+            </a> <br />
+        </p>
+
+      <Footer />
     </div>
   );
 }

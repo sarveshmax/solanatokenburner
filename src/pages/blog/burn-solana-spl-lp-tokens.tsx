@@ -10,6 +10,7 @@ export default function BurnSolanaGuide() {
           name="description"
           content="The most complete 2025 guide explaining how to burn SPL and LP tokens on Solana using Phantom Wallet through SolTokenBurner. No code required."
         />
+        <link rel="canonical" href="https://www.soltokenburner.com/blog/burn-solana-spl-lp-tokens" />
       </Head>
 
       <h1 className="text-3xl font-bold mb-6">
@@ -155,14 +156,32 @@ export default function BurnSolanaGuide() {
         ✅ Conclusion
       </h2>
 
-      <p className="mb-20">
+      <p className="mb-5">
         Burning tokens on Solana is now easier and safer than ever. With the Sol Token Burner,
         anyone — even with zero development experience — can remove tokens from circulation,
         clean their wallet, or perform project-related burns with full transparency. All
         actions take place on-chain and are fully verifiable, making it the most reliable and
         community-trusted way to burn SPL or LP tokens.
       </p>
-          <Footer />
+
+            <p className="text-gray-400 mb-10 text-sm">
+  Updated: November 2025
+</p>
+
+        <p className="mt-5 mb-10">
+            🔗 Related Guides: <br />
+                <a href="/blog/burn-lp-tokens-solana" className="text-blue-400 underline">
+                How to Burn Liquidity Pool Tokens on Solana - LP Burn
+            </a> <br />
+            <a href="/blog/dead-wallet-address-solana" className="text-blue-400 underline">
+                Dead Wallet Address on Solana (Explained)
+            </a> <br />
+                <a href="/blog/sol-incinerator-alternative" className="text-blue-400 underline">
+                Why SolTokenBurner is the Only & Best Solana Token Burner
+            </a> <br />
+        </p>
+
+      <Footer />
     </div>
 
 
