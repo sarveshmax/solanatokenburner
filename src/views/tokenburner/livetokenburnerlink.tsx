@@ -32,7 +32,7 @@ const LiveTokenBurnerLink = () => {
               overflowX: "auto",
             }}
           >
-            {`🔥 View LIVE LP/SPL Burns done `}
+            {/* {`🔥 View LIVE LP/SPL Burns done `}
             <a
               href={`https://xray.helius.xyz/account/${addressToReceiveBurnFees}?network=mainnet`}
               target="_blank"
@@ -41,7 +41,7 @@ const LiveTokenBurnerLink = () => {
             >
               HERE
             </a>{" "}
-            <br /> <br />
+            <br /> <br /> */}
             {`• Confirm that the URL is https://soltokenburner.com/ to safeguard against potential phishing sites.
 • Add our website to your bookmarks.`}
             {/* <br />
