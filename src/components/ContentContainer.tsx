@@ -31,6 +31,9 @@ export const ContentContainer: FC = (props) => {
           onClick={closeDrawer}
         ></label>
         <ul className="menu w-80 overflow-y-auto bg-base-100 p-4">
+
+
+
           <li>
             <Link href="/">
               <a onClick={closeDrawer}>🔥 - One-Click Burner</a>
@@ -67,17 +70,37 @@ export const ContentContainer: FC = (props) => {
           </li>
           <br />
 
-          {/* <li>
-            <Link href="https://solana.kgm.com/">
-              <a onClick={closeDrawer}>⚒️ -More Tools</a>
+          <li>
+            <Link href="/blog/burn-solana-spl-lp-tokens">
+              <a onClick={closeDrawer}>How to Burn Tokens - Solana</a>
             </Link>
-          </li> */}
+          </li>
+          <li>
+            <Link href="/blog/burn-lp-tokens-solana">
+              <a onClick={closeDrawer}>How to Burn LP - Solana</a>
+            </Link>
+          </li>
+            <li>
+            <Link href="/blog/dead-wallet-address-solana">
+              <a onClick={closeDrawer}>Solana's Dead Wallet Address</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog/sol-incinerator-alternative">
+              <a onClick={closeDrawer}>Why SolTokenBurner is the Best</a>
+            </Link>
+          </li>
+
+          <br />
 
           <li>
             <Link href="https://soltokenburner.com/">
               <a onClick={closeDrawer}>🏠 - Home</a>
             </Link>
           </li>
+
+
+
         </ul>
       </div>
     </div>
