@@ -30,12 +30,17 @@ const FAQ = () => {
       <div className="space-y-3">
         <FAQItem
           question="Can I burn only a portion of my SPL or LP tokens?"
-          answer="Yes. SolTokenBurner supports partial burns. Select “Input Amount to Burn,” enter your desired amount, and confirm the burn."
+          answer="Yes. SolTokenBurner supports partial burns. Select “Input Amount to Burn,” enter your desired amount, and confirm the transaction."
         />
 
         <FAQItem
           question="Is burning tokens on Solana permanent?"
           answer="Yes. All burns on Solana are irreversible. Please double-check the token and amount before confirming."
+        />
+
+        <FAQItem
+          question="How do I verify that my tokens were burned?"
+          answer="After completing a burn, go to SolScan and search for your wallet address. Your most recent transaction will display the on-chain burn details."
         />
 
         <FAQItem
@@ -45,7 +50,7 @@ const FAQ = () => {
 
         <FAQItem
           question="Is SolTokenBurner safe to use?"
-          answer="Yes. All burns are executed directly on-chain from your connected wallet, with no third-party trust is required."
+          answer="Yes. All burns are executed directly on-chain from your connected wallet, no third-party trust is required."
         /> 
 
         <FAQItem
