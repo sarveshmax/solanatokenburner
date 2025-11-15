@@ -31,9 +31,6 @@ export const ContentContainer: FC = (props) => {
           onClick={closeDrawer}
         ></label>
         <ul className="menu w-80 overflow-y-auto bg-base-100 p-4">
-
-
-
           <li>
             <Link href="/">
               <a onClick={closeDrawer}>🔥 - One-Click Burner</a>
@@ -80,7 +77,7 @@ export const ContentContainer: FC = (props) => {
               <a onClick={closeDrawer}>How to Burn LP - Solana</a>
             </Link>
           </li>
-            <li>
+          <li>
             <Link href="/blog/dead-wallet-address-solana">
               <a onClick={closeDrawer}>Solana's Dead Wallet Address</a>
             </Link>
@@ -98,9 +95,6 @@ export const ContentContainer: FC = (props) => {
               <a onClick={closeDrawer}>🏠 - Home</a>
             </Link>
           </li>
-
-
-
         </ul>
       </div>
     </div>

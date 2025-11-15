@@ -51,7 +51,7 @@ export const TokenBurnerView: FC = ({}) => {
           Solana Token Burner
         </h1>
 
-                {/* // NOTICE
+        {/* // NOTICE
         <div style={{ ...informationBoxStyle }}>
           <pre style={{ ...informationBoxPrestyle }}>
             {`When burning tokens worth more than $1, Phantom may display a warning. Choose "Proceed anyway" if you’re certain you’re burning the correct assets.`}
@@ -88,7 +88,7 @@ export const TokenBurnerView: FC = ({}) => {
         {/* <VerifyBurn /> */}
 
         {/* FAQ */}
-        <FAQ />  
+        <FAQ />
 
         {/* FOOTER */}
         <br />

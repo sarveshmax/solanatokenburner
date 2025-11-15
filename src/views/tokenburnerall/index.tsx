@@ -82,7 +82,7 @@ export const TokenBurnerAllView: FC = ({}) => {
           Burn Solana SPL or LP Tokens
         </h1>
 
-                {/* NOTICE */}
+        {/* NOTICE */}
         {/* <div style={{ ...informationBoxStyle }}>
           <pre style={{ ...informationBoxPrestyle }}>
             {`When burning tokens worth more than $1, Phantom may display a warning. You can safely continue if you’re certain you’re burning the correct assets.`}
@@ -128,8 +128,6 @@ Select one of the options:
             </pre>
           </div>
         )}
-        
-
 
         {/* VIEW LIVE BURNS */}
         {/* <LiveTokenBurnerLink /> */}
@@ -146,7 +144,7 @@ Select one of the options:
         {/* <VerifyBurn /> */}
 
         {/* FAQ */}
-        <FAQ />  
+        <FAQ />
 
         {/* FOOTER */}
         <br />

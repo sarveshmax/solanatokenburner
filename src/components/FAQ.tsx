@@ -14,9 +14,7 @@ const FAQItem = ({ question, answer }) => {
       </button>
 
       {open && (
-        <p className="mt-2 text-gray-400 text-sm leading-relaxed">
-          {answer}
-        </p>
+        <p className="mt-2 text-gray-400 text-sm leading-relaxed">{answer}</p>
       )}
     </div>
   );
@@ -51,7 +49,7 @@ const FAQ = () => {
         <FAQItem
           question="Is SolTokenBurner safe to use?"
           answer="Yes. All burns are executed directly on-chain from your connected wallet, no third-party trust is required."
-        /> 
+        />
 
         <FAQItem
           question="Where can I find a SolTokenBurner tutorial?"
@@ -61,6 +59,5 @@ const FAQ = () => {
     </div>
   );
 };
-
 
 export default FAQ;
