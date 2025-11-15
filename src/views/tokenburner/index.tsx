@@ -10,6 +10,7 @@ import {
   informationBoxStyleCentered,
 } from "../informationBoxStyle";
 import ObtainTokenAccount from "./obtaintokenaccount";
+import FAQ from "components/FAQ";
 
 export const TokenBurnerView: FC = ({}) => {
   // BACKGROUND STARS
@@ -85,6 +86,9 @@ export const TokenBurnerView: FC = ({}) => {
 
         {/* VERIFY BURN - TUTORIAL */}
         {/* <VerifyBurn /> */}
+
+        {/* FAQ */}
+        <FAQ />  
 
         {/* FOOTER */}
         <br />

@@ -10,6 +10,7 @@ import {
 } from "../informationBoxStyle";
 import { BurnTokensAll } from "components/BurnTokensAll";
 import { useWallet } from "@solana/wallet-adapter-react";
+import FAQ from "components/FAQ";
 
 export const TokenBurnerAllView: FC = ({}) => {
   // BACKGROUND STARS
@@ -143,6 +144,9 @@ Select one of the options:
 
         {/* VERIFY BURN - TUTORIAL */}
         {/* <VerifyBurn /> */}
+
+        {/* FAQ */}
+        <FAQ />  
 
         {/* FOOTER */}
         <br />
