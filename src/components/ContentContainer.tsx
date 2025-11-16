@@ -73,6 +73,11 @@ export const ContentContainer: FC = (props) => {
             </Link>
           </li>
           <li>
+            <Link href="/blog/how-soltokenburner-works">
+              <a onClick={closeDrawer}>How SolTokenBurner Works</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/blog/burn-solana-spl-lp-tokens">
               <a onClick={closeDrawer}>How to Burn Tokens - Solana</a>
             </Link>

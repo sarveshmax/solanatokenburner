@@ -137,6 +137,13 @@ export default function SolIncineratorAlternative() {
       <p className="mt-5 mb-10">
         🔗 Related Guides: <br />
         <a
+          href="/blog/how-soltokenburner-works"
+          className="text-blue-400 underline"
+        >
+          How SolTokenBurner Works (Technical Breakdown)
+        </a>{" "}
+        <br />
+        <a
           href="/blog/burn-solana-spl-lp-tokens"
           className="text-blue-400 underline"
         >

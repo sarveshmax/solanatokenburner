@@ -24,6 +24,13 @@ export async function getServerSideProps({ res }) {
   </url>
 
   <url>
+    <loc>https://www.soltokenburner.com/blog/how-soltokenburner-works</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://www.soltokenburner.com/blog/burn-lp-tokens-solana</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>

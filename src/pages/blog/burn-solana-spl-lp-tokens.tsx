@@ -190,6 +190,13 @@ export default function BurnSolanaGuide() {
       <p className="mt-5 mb-10">
         🔗 Related Guides: <br />
         <a
+          href="/blog/how-soltokenburner-works"
+          className="text-blue-400 underline"
+        >
+          How SolTokenBurner Works (Technical Breakdown)
+        </a>{" "}
+        <br />
+        <a
           href="/blog/burn-lp-tokens-solana"
           className="text-blue-400 underline"
         >

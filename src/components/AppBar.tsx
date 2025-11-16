@@ -50,6 +50,13 @@ export const AppBar: FC = (props) => {
               🔥 Manual Burner
             </a>
           </Link>
+          <Link href="/blog">
+            <a
+              className={`btn mx-2 ${router.pathname === "/blog" ? "btn-active" : ""}`}
+            >
+              📘 Blog
+            </a>
+          </Link>
           {/* <Link href="/">
             <a
               className={`btn mx-2 ${router.pathname === "/" ? "btn-active" : ""}`}

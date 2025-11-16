@@ -24,6 +24,11 @@ export default function BlogIndex() {
 
       <div className="space-y-6">
         <BlogLink
+          title="⚙️ How SolTokenBurner Works (Technical Breakdown)"
+          url="/blog/how-soltokenburner-works"
+        />
+
+        <BlogLink
           title="🧨 How to Burn SPL or LP Tokens on Solana"
           url="/blog/burn-solana-spl-lp-tokens"
         />
@@ -69,7 +74,7 @@ export default function BlogIndex() {
 function BlogLink({ title, url }: { title: string; url: string }) {
   return (
     <Link href={url}>
-      <div className="p-4 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-neutral-500 hover:bg-neutral-800 transition cursor-pointer">
+      <div className="p-4 rounded-xl bg-black border border-neutral-700 hover:border-neutral-500 hover:bg-black transition cursor-pointer">
         <h2 className="text-xl font-semibold">{title}</h2>
         <p className="text-sm text-blue-400 mt-1">{url}</p>
       </div>
