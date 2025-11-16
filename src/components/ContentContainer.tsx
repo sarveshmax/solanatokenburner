@@ -68,6 +68,11 @@ export const ContentContainer: FC = (props) => {
           <br />
 
           <li>
+            <Link href="/blog">
+              <a onClick={closeDrawer}>📘 - Blog</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/blog/burn-solana-spl-lp-tokens">
               <a onClick={closeDrawer}>How to Burn Tokens - Solana</a>
             </Link>
@@ -80,6 +85,21 @@ export const ContentContainer: FC = (props) => {
           <li>
             <Link href="/blog/dead-wallet-address-solana">
               <a onClick={closeDrawer}>Solana's Dead Wallet Address</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog/dexscreener-padlock-liquidity-lock">
+              <a onClick={closeDrawer}>DexScreener Padlock Tutorial</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog/burn-tokens-phantom">
+              <a onClick={closeDrawer}>Burn Tokens Phantom</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog/solana-burn-address">
+              <a onClick={closeDrawer}>Solana Burn Address</a>
             </Link>
           </li>
           <li>

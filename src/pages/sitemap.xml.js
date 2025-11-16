@@ -17,6 +17,13 @@ export async function getServerSideProps({ res }) {
   </url>
 
   <url>
+    <loc>https://www.soltokenburner.com/blog</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
     <loc>https://www.soltokenburner.com/blog/burn-lp-tokens-solana</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -40,6 +47,27 @@ export async function getServerSideProps({ res }) {
   <url>
     <loc>https://www.soltokenburner.com/blog/sol-incinerator-alternative</loc>
     <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+    <url>
+    <loc>https://www.soltokenburner.com/blog/burn-tokens-phantom</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+    <url>
+    <loc>https://www.soltokenburner.com/blog/dexscreener-padlock-liquidity-lock</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+    <url>
+    <loc>https://www.soltokenburner.com/blog/solana-burn-address</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

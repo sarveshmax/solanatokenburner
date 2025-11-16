@@ -169,6 +169,7 @@ export default function DeadWalletBurnGuide() {
         supply, this method ensures the burn is clean, transparent, and visible
         on Solscan.
       </p>
+
       <p className="text-gray-400 mb-10 text-sm">Updated: November 2025</p>
 
       <p className="mt-5 mb-10">
@@ -185,6 +186,21 @@ export default function DeadWalletBurnGuide() {
           className="text-blue-400 underline"
         >
           How to Burn Liquidity Pool Tokens on Solana - LP Burn
+        </a>{" "}
+        <br />
+        <a
+          href="/blog/dexscreener-padlock-liquidity-lock"
+          className="text-blue-400 underline"
+        >
+          How to get Padlock on DexScreener (Tutorial)
+        </a>{" "}
+        <br />
+        <a href="/blog/burn-tokens-phantom" className="text-blue-400 underline">
+          How to Burn Tokens on Phantom
+        </a>{" "}
+        <br />
+        <a href="/blog/solana-burn-address" className="text-blue-400 underline">
+          What is Solana's Burn Address
         </a>{" "}
         <br />
         <a

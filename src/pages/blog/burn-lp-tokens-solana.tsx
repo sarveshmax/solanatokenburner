@@ -118,6 +118,21 @@ export default function BurnLPTokensGuide() {
         </a>{" "}
         <br />
         <a
+          href="/blog/dexscreener-padlock-liquidity-lock"
+          className="text-blue-400 underline"
+        >
+          How to get Padlock on DexScreener (Tutorial)
+        </a>{" "}
+        <br />
+        <a href="/blog/burn-tokens-phantom" className="text-blue-400 underline">
+          How to Burn Tokens on Phantom
+        </a>{" "}
+        <br />
+        <a href="/blog/solana-burn-address" className="text-blue-400 underline">
+          What is Solana's Burn Address
+        </a>{" "}
+        <br />
+        <a
           href="/blog/sol-incinerator-alternative"
           className="text-blue-400 underline"
         >

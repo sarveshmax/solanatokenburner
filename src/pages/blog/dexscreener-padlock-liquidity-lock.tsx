@@ -1,0 +1,149 @@
+import Footer from "components/Footer";
+import Head from "next/head";
+
+export default function DexPadlockGuide() {
+  return (
+    <div className="max-w-3xl mx-auto px-4 py-10 text-gray-100">
+      <Head>
+        <title>
+          How to Get the Padlock on Dexscreener | LP Lock Badge Guide 2025
+        </title>
+        <meta
+          name="description"
+          content="Learn how to get the padlock icon on Dexscreener by burning your LP tokens on Solana. Works for Raydium, Orca, Meteora and all SPL LP tokens."
+        />
+        <link
+          rel="canonical"
+          href="https://www.soltokenburner.com/blog/dexscreener-padlock-liquidity-lock"
+        />
+      </Head>
+
+      <h1 className="text-3xl font-bold mb-6">
+        How to Get the Padlock on Dexscreener (LP Lock Badge)
+      </h1>
+
+      <p className="mb-6">
+        The padlock icon on Dexscreener appears when your liquidity is locked or
+        burned. On Solana, the simplest and most trusted way to get this padlock
+        is by <strong>burning the LP tokens</strong> that the DEX (Raydium,
+        Orca, Meteora, etc.) gives you when you create a liquidity pool.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        🔒 Why the Padlock Appears
+      </h2>
+
+      <p className="mb-6">
+        Dexscreener automatically detects when the supply of an LP token becomes
+        zero. Burning LP tokens locks liquidity permanently, meaning nobody
+        (including devs) can withdraw it. This gives a strong trust signal to
+        traders. You can also partially burn the LP, but the green circle around
+        the padlock will only be filled completely if you burn 100%.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        🚀 How to Burn LP Tokens for the Padlock (Step-by-Step)
+      </h2>
+
+      <h3 className="text-xl font-semibold mb-3">1. Open SolTokenBurner</h3>
+      <p className="mb-4">
+        Go to https://soltokenburner.com and connect your Phantom wallet.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-3">2. Click REFRESH</h3>
+      <p className="mb-4">Your SPL/LP tokens will load automatically.</p>
+
+      <h3 className="text-xl font-semibold mb-3">3. Select the LP Token</h3>
+      <p className="mb-4">
+        LP tokens appear with random letters like{" "}
+        <strong>aBcytDz...hshYfa</strong> or names like <strong>RAY-LP</strong>,{" "}
+        <strong>ORCA-LP</strong>, <strong>POOL-LP</strong>, etc.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-3">4. Choose Burn Amount</h3>
+      <ul className="list-disc ml-6 mb-4 space-y-1">
+        <li>
+          <strong>Burn All</strong> (recommended) — burns the LP completely
+        </li>
+        <li>
+          <strong>Custom Amount</strong> — only if partial burn is needed. The
+          unburned LP can be removed later.{" "}
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-semibold mb-3">5. Approve the Burn</h3>
+      <p className="mb-6">
+        Phantom will ask for approval. After confirmation, the LP tokens are
+        permanently removed.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        🔍 When Does the Padlock Show?
+      </h2>
+
+      <p className="mb-6">
+        Dexscreener checks the pool automatically. The padlock usually appears{" "}
+        <strong>instantly</strong> or within <strong>5–10 minutes</strong>.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">❓ FAQs</h2>
+
+      <h3 className="text-xl font-semibold mb-3">
+        Does Dexscreener require manual submission?
+      </h3>
+      <p className="mb-6">No. It detects LP burn on-chain automatically.</p>
+
+      <h3 className="text-xl font-semibold mb-3">Is LP burning permanent?</h3>
+      <p className="mb-6">Yes — burned LP cannot be recovered.</p>
+
+      <h3 className="text-xl font-semibold mb-3">
+        Will the padlock disappear?
+      </h3>
+      <p className="mb-5">No. Burned liquidity stays locked forever.</p>
+
+      <p className="text-gray-400 mb-10 text-sm">Updated: November 2025</p>
+
+      <p className="mt-5 mb-10">
+        🔗 Related Guides: <br />
+        <a
+          href="/blog/burn-solana-spl-lp-tokens"
+          className="text-blue-400 underline"
+        >
+          How to Burn SPL & LP Tokens on Solana
+        </a>{" "}
+        <br />
+        <a
+          href="/blog/burn-lp-tokens-solana"
+          className="text-blue-400 underline"
+        >
+          How to Burn Liquidity Pool Tokens on Solana - LP Burn
+        </a>{" "}
+        <br />
+        <a
+          href="/blog/dead-wallet-address-solana"
+          className="text-blue-400 underline"
+        >
+          Dead Wallet Address on Solana (Explained)
+        </a>{" "}
+        <br />
+        <a href="/blog/burn-tokens-phantom" className="text-blue-400 underline">
+          How to Burn Tokens on Phantom
+        </a>{" "}
+        <br />
+        <a href="/blog/solana-burn-address" className="text-blue-400 underline">
+          What is Solana's Burn Address
+        </a>{" "}
+        <br />
+        <a
+          href="/blog/sol-incinerator-alternative"
+          className="text-blue-400 underline"
+        >
+          Why SolTokenBurner is the Only & Best Solana Token Burner
+        </a>{" "}
+        <br />
+      </p>
+
+      <Footer />
+    </div>
+  );
+}
