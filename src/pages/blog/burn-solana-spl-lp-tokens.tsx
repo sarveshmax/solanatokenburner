@@ -83,8 +83,19 @@ export default function BurnSolanaGuide() {
         1. Open SolTokenBurner
       </h3>
       <p className="mb-4">
-        Go to <strong>https://soltokenburner.com</strong>. In the top-right
-        corner, click <strong>Select Wallet</strong> and choose your wallet.
+        Go to{" "}
+        <strong>
+          <a
+            href="https://soltokenburner.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-300 underline"
+          >
+            https://soltokenburner.com/
+          </a>
+        </strong>
+        . In the top-right corner, click <strong>Select Wallet</strong> and
+        connect your wallet.
       </p>
 
       <h3 className="text-xl font-semibold mt-6 mb-3">2. Load Your Tokens</h3>

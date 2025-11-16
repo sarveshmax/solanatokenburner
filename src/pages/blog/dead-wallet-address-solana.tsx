@@ -104,8 +104,19 @@ export default function DeadWalletBurnGuide() {
       </h3>
 
       <p className="mb-4">
-        Visit <strong>https://soltokenburner.com/</strong> and click{" "}
-        <strong>Select Wallet</strong> to connect Phantom (or any wallet).
+        Visit{" "}
+        <strong>
+          <a
+            href="https://soltokenburner.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-300 underline"
+          >
+            https://soltokenburner.com/
+          </a>
+        </strong>{" "}
+        and click <strong>Select Wallet</strong> to connect Phantom (or any
+        wallet).
       </p>
 
       <h3 className="text-xl font-semibold mt-6 mb-3">

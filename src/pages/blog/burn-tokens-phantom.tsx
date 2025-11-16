@@ -44,8 +44,16 @@ export default function PhantomBurnGuide() {
 
       <h3 className="text-xl font-semibold mb-3">1. Open SolTokenBurner</h3>
       <p className="mb-4">
-        Visit https://soltokenburner.com/ and connect your Phantom wallet on the
-        top right.
+        Visit{" "}
+        <a
+          href="https://soltokenburner.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-300 underline"
+        >
+          https://soltokenburner.com/
+        </a>{" "}
+        and connect your Phantom wallet on the top right.
       </p>
 
       <h3 className="text-xl font-semibold mb-3">2. Click REFRESH</h3>

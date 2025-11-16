@@ -74,7 +74,17 @@ export default function SolanaBurnAddressGuide() {
       </p>
 
       <ol className="list-decimal ml-6 mb-6 space-y-2">
-        <li>Go to https://soltokenburner.com/</li>
+        <li>
+          Go to{" "}
+          <a
+            href="https://soltokenburner.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-300 underline"
+          >
+            https://soltokenburner.com/
+          </a>
+        </li>
         <li>Connect your wallet on the top right</li>
         <li>Click REFRESH to load your tokens</li>
         <li>Select any token you want to burn</li>

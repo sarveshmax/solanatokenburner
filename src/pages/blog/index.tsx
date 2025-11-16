@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -59,6 +60,8 @@ export default function BlogIndex() {
       </div>
 
       <div className="h-20" />
+
+      <Footer />
     </div>
   );
 }

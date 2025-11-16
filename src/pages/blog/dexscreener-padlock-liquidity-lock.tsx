@@ -47,7 +47,16 @@ export default function DexPadlockGuide() {
 
       <h3 className="text-xl font-semibold mb-3">1. Open SolTokenBurner</h3>
       <p className="mb-4">
-        Go to https://soltokenburner.com and connect your Phantom wallet.
+        Go to{" "}
+        <a
+          href="https://soltokenburner.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-300 underline"
+        >
+          https://soltokenburner.com/
+        </a>{" "}
+        and connect your Phantom wallet.
       </p>
 
       <h3 className="text-xl font-semibold mb-3">2. Click REFRESH</h3>
