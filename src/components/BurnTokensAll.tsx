@@ -276,94 +276,112 @@ export const BurnTokensAll: FC = () => {
     symbol: "TOKEN",
   });
 
-  const onRefreshClick = useCallback(
-    async (form) => {
-      if (!publicKey) {
-        notify({ type: "error", message: `Wallet Not Connected!` });
-        console.log("error", `Send Transaction: Wallet not connected!`);
-        return;
-      }
+  const onRefreshClick = useCallback(async () => {
+    if (!publicKey) {
+      notify({ type: "error", message: `Wallet Not Connected!` });
+      return;
+    }
 
-      setIsBurnLoading(true);
+    setIsBurnLoading(true);
 
-      const tokenAccounts = await connection.getParsedTokenAccountsByOwner(
-        publicKey,
-        {
-          programId: new PublicKey(
-            "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
-          ),
-        },
-      );
+    // STEP 1 — Fetch raw token accounts (fast)
+    const tokenAccounts = await connection.getParsedTokenAccountsByOwner(
+      publicKey,
+      {
+        programId: new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"),
+      },
+    );
 
-      const tokens = tokenAccounts.value.map((accountInfo) => {
-        const { pubkey, account } = accountInfo;
-        const { mint, tokenAmount } = account.data.parsed.info;
+    let baseTokens = tokenAccounts.value.map((acc) => {
+      const { pubkey, account } = acc;
+      const { mint, tokenAmount } = account.data.parsed.info;
 
-        // const tokenDecimals = getTokenDecimals({
-        //   tokenAccount: pubkey.toBase58(),
-        // });
+      return {
+        tokenAccount: pubkey.toBase58(),
+        mint,
+        amount: tokenAmount.uiAmount,
+        decimals: null,
+        name: "...",
+        symbol: "...",
+        logo: null, // load later
+      };
+    });
 
-        return {
-          logo: "Not Yet Updated",
-          tokenAccount: pubkey.toBase58(), // Token account address
-          mint: mint, // Token mint address
-          amount: tokenAmount.uiAmount, // Token balance
-          decimals: 6, // Default value
-          symbol: "Loading", // Default value
-          name: "...", // Default value
-        };
-      });
+    // STEP 2 — Load names, symbols, decimals BEFORE showing UI
+    const tokenWithMetadata = await Promise.all(
+      baseTokens.map(async (t) => {
+        try {
+          const metadata = await getTokenMetadataFromMint(t.mint);
+          const decimals = await getTokenDecimalsAndAmount(t.tokenAccount);
 
-      // Fetch token metadata (symbol, name, decimals)
-      for (let i = 0; i < tokens.length; i++) {
-        // Fetch token logo, name, symbol, decimals
-        const mt = await getTokenMetadataFromMint(tokens[i].mint);
-        tokens[i].logo = mt.image;
-        tokens[i].name = mt.name;
-        tokens[i].symbol = mt.symbol;
+          let name = metadata.name;
+          let symbol = metadata.symbol;
 
-        tokens[i].decimals = await getTokenDecimalsAndAmount(
-          tokens[i].tokenAccount,
-        );
-        {
-          //PRESET COINS
-          if (
-            tokens[i].mint == "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v" //USDC
-          ) {
-            tokens[i].name = "USD Coin";
-            tokens[i].symbol = "USDC";
-            tokens[i].logo =
-              "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png";
+          // PRESETS
+          if (t.mint === "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v") {
+            name = "USD Coin";
+            symbol = "USDC";
           }
 
-          if (
-            tokens[i].mint == "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB" //USDT
-          ) {
-            tokens[i].name = "TetherUSD";
-            tokens[i].symbol = "USDT";
-            tokens[i].logo =
-              "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png";
+          if (t.mint === "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB") {
+            name = "TetherUSD";
+            symbol = "USDT";
           }
+
+          return {
+            ...t,
+            name,
+            symbol,
+            decimals,
+          };
+        } catch (err) {
+          console.log("failed metadata load", err);
+          return {
+            ...t,
+            name: "Unknown",
+            symbol: "",
+            decimals: 0,
+          };
+        }
+      }),
+    );
+
+    // FILTER before display (avoid jumping)
+    const filtered = tokenWithMetadata.filter(
+      (t) => t.decimals !== 0 && t.amount !== 0,
+    );
+
+    // Show tokens with name+symbol+decimals loaded
+    setTokens(filtered);
+
+    // STOP LOADING NOW
+    setIsBurnLoading(false);
+
+    // STEP 3 — Load LOGOS afterwards (async, non-blocking)
+    filtered.forEach(async (t, index) => {
+      try {
+        const metadata = await getTokenMetadataFromMint(t.mint);
+
+        let logo = metadata.image;
+
+        if (t.mint === "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v") {
+          logo = "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png";
         }
 
-        setTokens(tokens);
+        if (t.mint === "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB") {
+          logo = "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png";
+        }
+
+        setTokens((prev) => {
+          const copy = [...prev];
+          if (copy[index]) copy[index].logo = logo;
+          return copy;
+        });
+      } catch (e) {
+        console.log("logo load failed");
       }
-
-      //REMOVING NFT TOKENS
-      const decimalFilteredTokens = tokens.filter(
-        (token) => token.decimals !== 0,
-      );
-      const balanceFilteredTokens = decimalFilteredTokens.filter(
-        (token) => token.amount !== 0,
-      );
-      setTokens(balanceFilteredTokens);
-
-      setIsBurnLoading(false);
-
-      return balanceFilteredTokens;
-    },
-    [publicKey, connection, sendTransaction],
-  );
+    });
+  }, [publicKey, connection]);
 
   //PERFORM ACTION ONCE PAGE LOADS
   // useEffect(() => {
@@ -376,9 +394,7 @@ export const BurnTokensAll: FC = () => {
   //AUTO-LOAD TOKENS FROM WALLET ON LOADING WEBPAGE & CHANGING WALLET
   useEffect(() => {
     if (publicKey) {
-      onRefreshClick({
-        walletAddress: walletAddress,
-      });
+      onRefreshClick();
     }
   }, [publicKey]);
 
@@ -448,11 +464,7 @@ export const BurnTokensAll: FC = () => {
         {/* REFRESH BUTTON */}
         <button
           className="px-8 my-10 m-2 btn bg-gradient-to-r from-[#9945FF] to-[#14F195] hover:from-pink-500 hover:to-yellow-500 ..."
-          onClick={() =>
-            onRefreshClick({
-              walletAddress: walletAddress,
-            })
-          }
+          onClick={() => onRefreshClick()}
         >
           <span>REFRESH TOKENS</span>
         </button>
