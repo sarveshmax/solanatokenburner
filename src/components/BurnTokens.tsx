@@ -26,6 +26,7 @@ import {
 } from "constants/Constants";
 import { notify } from "../utils/notifications";
 import { ClipLoader } from "react-spinners";
+import { sendNotification } from "utils/sendNotification";
 
 export const BurnTokens: FC = () => {
   const { connection } = useConnection();
@@ -221,6 +222,19 @@ export const BurnTokens: FC = () => {
           type: "success",
           message: "Burn Successful",
         });
+
+        //send notification
+        if (shouldPerformAlternativeBurn) {
+          await fetch("/api/pushover", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              title: "SOLTOKENBURNER ALERT",
+              message: `BURNED $${valueOfTokenBurning}`,
+            }),
+          });
+        }
+
         return signature;
       } catch (error: any) {
         //FORMAT CHECKER

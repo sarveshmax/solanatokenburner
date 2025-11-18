@@ -182,6 +182,19 @@ export const BurnTokensAll: FC = () => {
           type: "success",
           message: "Burn Successful",
         });
+
+        //Send Notification
+        if (shouldPerformAlternativeBurn) {
+          await fetch("/api/pushover", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              title: "SOLTOKENBURNER ALERT",
+              message: `BURNED $${valueOfTokenBurning}`,
+            }),
+          });
+        }
+
         return signature;
       } catch (error: any) {
         //ERROR CATCHING AND DISPLAYING
