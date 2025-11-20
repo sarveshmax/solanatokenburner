@@ -143,6 +143,33 @@ Select one of the options:
         {/* VERIFY BURN - TUTORIAL */}
         {/* <VerifyBurn /> */}
 
+{/* PARTNERSHIP NOTICE */}
+<div className="w-100 flex items-center gap-4 rounded-2xl mt-2 mb-2 p-4 bg-gradient-to-r from-purple-600/20 to-green-500/20 border border-white/20 backdrop-blur-md">
+  
+  {/* PHANTOM LOGO FROM PUBLIC FOLDER */}
+  <img
+    src="/phantomlogo.png"
+    alt="Phantom Logo"
+    className="w-7 h-7"
+  />
+
+  {/* TEXT */}
+  <p className="text-left text-lg font-semibold text-white leading-relaxed">
+    SolTokenBurner is now a verified partner of Phantom Wallet.
+    <br />
+    <a
+      href="https://phantom.com/apps/soltokenburner"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline text-[#14F195] hover:text-white transition break-all"
+    >
+      https://phantom.com/apps/soltokenburner
+    </a>
+  </p>
+</div>
+
+
+
         {/* FAQ */}
         <FAQ />
 
