@@ -87,9 +87,6 @@ export const TokenBurnerView: FC = ({}) => {
         {/* VERIFY BURN - TUTORIAL */}
         {/* <VerifyBurn /> */}
 
-
-
-
         {/* FAQ */}
         <FAQ />
 
