@@ -4,7 +4,7 @@ const FAQItem = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border border-gray-700 rounded-lg p-3 bg-[#0d0d0d]">
+    <div className="w-full border border-gray-700 rounded-lg p-3 bg-[#0d0d0d]">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex justify-between items-center text-left text-white"
@@ -13,16 +13,20 @@ const FAQItem = ({ question, answer }) => {
         <span className="text-gray-400">{open ? "−" : "+"}</span>
       </button>
 
-      {open && (
-        <p className="mt-2 text-gray-400 text-sm leading-relaxed">{answer}</p>
-      )}
+      <div
+        className={`transition-all duration-300 overflow-hidden ${
+          open ? "max-h-40 opacity-100 mt-2" : "max-h-0 opacity-0"
+        }`}
+      >
+        <p className="text-gray-400 text-sm leading-relaxed">{answer}</p>
+      </div>
     </div>
   );
 };
 
 const FAQ = () => {
   return (
-    <div className="w-full max-w-screen-xl mx-auto p-4 mt-10">
+    <div className="w-full max-w-2xl mx-auto p-4 mt-10">
       <h3 className="text-xl font-semibold text-white mb-4">FAQ</h3>
 
       <div className="space-y-3">
