@@ -6,7 +6,7 @@ const Home: NextPage = (props) => {
   return (
     <div>
       <Head>
-        <title>Burn Solana SPL & LP Tokens | SOLTOKENBURNER</title>
+        <title>Burn Solana SPL & LP Tokens | SolTokenBurner</title>
         <meta
           name="description"
           content="Burn Solana SPL and LP Tokens without any coding! Solana Token Burner!"
@@ -30,12 +30,12 @@ const Home: NextPage = (props) => {
                   name: "Can I burn only a portion of my Solana tokens?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes. SOLTOKENBURNER lets you burn any amount of SPL or LP tokens without burning your entire balance.",
+                    text: "Yes. SolTokenBurner lets you burn any amount of SPL or LP tokens without burning your entire balance.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Is SOLTOKENBURNER safe to use?",
+                  name: "Is SolTokenBurner safe to use?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text: "Yes. All burns are executed directly on-chain from your connected wallet, with no third-party trust is required.",
