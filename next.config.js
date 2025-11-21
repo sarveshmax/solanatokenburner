@@ -1,10 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-};
 
-module.exports = {
-  nextConfig,
+  async redirects() {
+    return [
+      {
+        source: "/tokenburner",
+        destination: "https://www.soltokenburner.com/",
+        permanent: true,
+      },
+    ];
+  },
+
   webpack(config) {
     config.resolve.fallback = {
       fs: false,
@@ -20,3 +27,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = nextConfig;
