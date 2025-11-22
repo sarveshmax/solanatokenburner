@@ -96,17 +96,38 @@ export const BurnTokens: FC = () => {
     [tokenAccount, connection],
   );
 
+  // async function getTokenPrice(mintAddress) { //RAYDIUM API
+  //   const url = `https://api-v3.raydium.io/mint/price?mints=${mintAddress}`;
+  //   try {
+  //     const response = await fetch(url);
+  //     if (!response.ok) {
+  //       return 0;
+  //     }
+
+  //     const data = await response.json();
+  //     if (data.success && data.data[mintAddress]) {
+  //       return parseFloat(data.data[mintAddress]); // Convert price to a float
+  //     } else {
+  //       return 0;
+  //     }
+  //   } catch (error) {
+  //     return 0;
+  //   }
+  // }
+
   async function getTokenPrice(mintAddress) {
-    const url = `https://api-v3.raydium.io/mint/price?mints=${mintAddress}`;
+    //JUPITER API
+    const url = `https://lite-api.jup.ag/price/v3?ids=${mintAddress}`;
+
     try {
       const response = await fetch(url);
-      if (!response.ok) {
-        return 0;
-      }
+      if (!response.ok) return 0;
 
       const data = await response.json();
-      if (data.success && data.data[mintAddress]) {
-        return parseFloat(data.data[mintAddress]); // Convert price to a float
+
+      // Jupiter returns: { "mintAddress": { usdPrice, ... } }
+      if (data[mintAddress] && data[mintAddress].usdPrice) {
+        return parseFloat(data[mintAddress].usdPrice);
       } else {
         return 0;
       }
