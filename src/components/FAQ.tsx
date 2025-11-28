@@ -52,7 +52,7 @@ const FAQ = () => {
 
         <FAQItem
           question="Is SolTokenBurner safe to use?"
-          answer="Yes. All burns are executed directly on-chain from your connected wallet, no third-party trust is required."
+          answer="Yes. All burns are executed directly on-chain from your connected wallet, no third-party trust is required. Additionally, SolTokenBurner is verified by Phantom."
         />
 
         <FAQItem

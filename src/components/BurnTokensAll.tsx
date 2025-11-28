@@ -292,7 +292,7 @@ export const BurnTokensAll: FC = () => {
   };
 
   const getDefaultMetadata = () => ({
-    image: unknownTokenImageURL,
+    image: "/unknowntoken.png",
     name: "Unknown",
     symbol: "TOKEN",
   });
@@ -386,11 +386,11 @@ export const BurnTokensAll: FC = () => {
         let logo = metadata.image;
 
         if (t.mint === "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v") {
-          logo = "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png";
+          logo = "/usdc.png";
         }
 
         if (t.mint === "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB") {
-          logo = "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png";
+          logo = "/usdt.png";
         }
 
         setTokens((prev) => {

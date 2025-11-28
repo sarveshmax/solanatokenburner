@@ -115,6 +115,29 @@ export const BurnTokens: FC = () => {
   //   }
   // }
 
+//   async function getTokenPrice(tokenAddress: string) {
+//   try {
+//     const url = `https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`;
+//     const res = await fetch(url);
+//     const data = await res.json();
+
+//     if (!data?.pairs || data.pairs.length === 0) {
+//       return { priceUsd: 0, priceNative: 0 };
+//     }
+
+//     // Pick the pair with highest liquidity
+//     const bestPair = data.pairs.reduce((a: any, b: any) =>
+//       (a.liquidity?.usd || 0) > (b.liquidity?.usd || 0) ? a : b,
+//     );
+
+//     return Number(bestPair.priceUsd || 0)
+
+//   } catch (err) {
+//     console.error("Price fetch error:", err);
+//     return 0;
+//   }
+// }
+
   async function getTokenPrice(mintAddress) {
     //JUPITER API
     const url = `https://lite-api.jup.ag/price/v3?ids=${mintAddress}`;
