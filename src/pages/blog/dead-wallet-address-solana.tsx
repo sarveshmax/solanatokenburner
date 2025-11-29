@@ -15,7 +15,7 @@ export default function DeadWalletBurnGuide() {
         />
         <link
           rel="canonical"
-          href="https://www.soltokenburner.com/blog/dead-wallet-address-solana"
+          href="https://old.soltokenburner.com/blog/dead-wallet-address-solana"
         />
       </Head>
 

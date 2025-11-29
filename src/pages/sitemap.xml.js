@@ -3,77 +3,77 @@ export async function getServerSideProps({ res }) {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.soltokenburner.com/</loc>
+    <loc>https://old.soltokenburner.com/</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.soltokenburner.com/manual</loc>
+    <loc>https://old.soltokenburner.com/manual</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.soltokenburner.com/blog</loc>
+    <loc>https://old.soltokenburner.com/blog</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://www.soltokenburner.com/blog/how-soltokenburner-works</loc>
+    <loc>https://old.soltokenburner.com/blog/how-soltokenburner-works</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.soltokenburner.com/blog/burn-lp-tokens-solana</loc>
+    <loc>https://old.soltokenburner.com/blog/burn-lp-tokens-solana</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.soltokenburner.com/blog/burn-solana-spl-lp-tokens</loc>
+    <loc>https://old.soltokenburner.com/blog/burn-solana-spl-lp-tokens</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.soltokenburner.com/blog/dead-wallet-address-solana</loc>
+    <loc>https://old.soltokenburner.com/blog/dead-wallet-address-solana</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.soltokenburner.com/blog/sol-incinerator-alternative</loc>
+    <loc>https://old.soltokenburner.com/blog/sol-incinerator-alternative</loc>
     <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
     <url>
-    <loc>https://www.soltokenburner.com/blog/burn-tokens-phantom</loc>
+    <loc>https://old.soltokenburner.com/blog/burn-tokens-phantom</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
     <url>
-    <loc>https://www.soltokenburner.com/blog/dexscreener-padlock-liquidity-lock</loc>
+    <loc>https://old.soltokenburner.com/blog/dexscreener-padlock-liquidity-lock</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
     <url>
-    <loc>https://www.soltokenburner.com/blog/solana-burn-address</loc>
+    <loc>https://old.soltokenburner.com/blog/solana-burn-address</loc>
     <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

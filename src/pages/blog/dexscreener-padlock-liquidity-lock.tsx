@@ -14,7 +14,7 @@ export default function DexPadlockGuide() {
         />
         <link
           rel="canonical"
-          href="https://www.soltokenburner.com/blog/dexscreener-padlock-liquidity-lock"
+          href="https://old.soltokenburner.com/blog/dexscreener-padlock-liquidity-lock"
         />
       </Head>
 

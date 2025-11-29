@@ -12,7 +12,7 @@ export default function SolanaBurnAddressGuide() {
         />
         <link
           rel="canonical"
-          href="https://www.soltokenburner.com/blog/solana-burn-address"
+          href="https://old.soltokenburner.com/blog/solana-burn-address"
         />
       </Head>
 

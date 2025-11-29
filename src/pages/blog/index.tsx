@@ -11,7 +11,7 @@ export default function BlogIndex() {
           name="description"
           content="🔥 Learn how to burn SPL tokens, LP tokens, lock liquidity, get the Dexscreener padlock, and more. Official Solana burning guides by SolTokenBurner."
         />
-        <link rel="canonical" href="https://www.soltokenburner.com/blog" />
+        <link rel="canonical" href="https://old.soltokenburner.com/blog" />
       </Head>
 
       <h1 className="text-3xl font-bold mb-6">🔥 Solana Token Burner Blog</h1>

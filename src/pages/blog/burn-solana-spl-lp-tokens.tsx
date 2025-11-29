@@ -14,7 +14,7 @@ export default function BurnSolanaGuide() {
         />
         <link
           rel="canonical"
-          href="https://www.soltokenburner.com/blog/burn-solana-spl-lp-tokens"
+          href="https://old.soltokenburner.com/blog/burn-solana-spl-lp-tokens"
         />
       </Head>
 

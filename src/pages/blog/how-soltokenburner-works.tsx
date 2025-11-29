@@ -12,7 +12,7 @@ export default function HowSolTokenBurnerWorks() {
         />
         <link
           rel="canonical"
-          href="https://www.soltokenburner.com/blog/how-soltokenburner-works"
+          href="https://old.soltokenburner.com/blog/how-soltokenburner-works"
         />
       </Head>
 

@@ -6,7 +6,7 @@ const Home: NextPage = (props) => {
   return (
     <div>
       <Head>
-        <title>Burn Solana SPL & LP Tokens | SolTokenBurner</title>
+        <title>Burn Solana SPL & LP Tokens | OLD SolTokenBurner</title>
         <meta
           name="description"
           content="Burn Solana SPL and LP Tokens without any coding! Solana Token Burner!"
@@ -15,7 +15,7 @@ const Home: NextPage = (props) => {
           name="keywords"
           content="burn solana tokens, burn lp, solana token burner, burn spl tokens, burn tokens solana"
         />
-        <link rel="canonical" href="https://www.soltokenburner.com" />
+        <link rel="canonical" href="https://old.soltokenburner.com" />
 
         {/* FAQ Structured Data */}
         <script

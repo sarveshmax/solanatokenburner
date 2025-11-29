@@ -14,7 +14,7 @@ export default function PhantomBurnGuide() {
         />
         <link
           rel="canonical"
-          href="https://www.soltokenburner.com/blog/burn-tokens-phantom"
+          href="https://old.soltokenburner.com/blog/burn-tokens-phantom"
         />
       </Head>
 

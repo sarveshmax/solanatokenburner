@@ -14,7 +14,7 @@ export default function SolIncineratorAlternative() {
         />
         <link
           rel="canonical"
-          href="https://www.soltokenburner.com/blog/sol-incinerator-alternative"
+          href="https://old.soltokenburner.com/blog/sol-incinerator-alternative"
         />
       </Head>
 

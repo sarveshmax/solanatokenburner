@@ -11,6 +11,7 @@ import {
 import { BurnTokensAll } from "components/BurnTokensAll";
 import { useWallet } from "@solana/wallet-adapter-react";
 import FAQ from "components/FAQ";
+import { BurnTokensPumpFun } from "components/BurnTokensPumpFun";
 
 export const TokenBurnerAllView: FC = ({}) => {
   // BACKGROUND STARS
@@ -135,6 +136,7 @@ Select one of the options:
         {/* BURN TOKENS */}
         <div className="text-center" style={{ marginTop: "5px" }}>
           <BurnTokensAll />
+          {/* <BurnTokensPumpFun /> */}
         </div>
 
         {/* OBTAIN TOKEN ACCOUNT - TUTORIAL */}

@@ -11,6 +11,22 @@ export const AppBar: FC = (props) => {
 
   return (
     <div>
+          {/* Announcement Bar */}
+    <div className="w-full text-center text-sm py-1 font-semibold"
+      style={{
+        background: "linear-gradient(90deg, #9945FF, #14F195, #00D18C)",
+        color: "#0e0e0e",
+      }}
+    >
+      🚀 <span className="font-bold">SolTokenBurner is now Updated!</span> — Visit{" "}
+      <a
+        href="https://www.soltokenburner.com"
+        className="underline font-bold"
+      >
+        www.soltokenburner.com
+      </a>
+    </div>
+    
       {/* NavBar / LOGO & MENU BUTTON */}
       <div className="navbar flex flex-row md:mb-0 shadow-lg bg-neutral text-neutral-content">
         <div className="hidden lg:flex items-center mr-1 ml-0 sm:ml-30 lg:ml-40"></div>

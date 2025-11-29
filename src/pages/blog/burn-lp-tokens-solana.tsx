@@ -12,7 +12,7 @@ export default function BurnLPTokensGuide() {
         />
         <link
           rel="canonical"
-          href="https://www.soltokenburner.com/blog/burn-lp-tokens-solana"
+          href="https://old.soltokenburner.com/blog/burn-lp-tokens-solana"
         />
       </Head>
 
